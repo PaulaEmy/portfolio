@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+
+}
 body {
   margin: 0;
   height: 100vh;
@@ -6,34 +12,220 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  gap: 200px;
+  font-family: 'Source Code Pro', monospace;
+  color:rgb(70, 70, 70);
+
 }
 
-.portfolio {
-  background-color: #f7afa6;
+header{
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin: 0 20px;
   margin-top: 10px;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+  font-size: 80%;
+}
+
+.nav-links a {
+  color: #d45b8c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover{
+  color:#683545;
+  transition: 0.5s;
+}
+
+
+.portfolio {
+  gap: 50px;
+  background-color: #ffeef3; 
+  min-height: 80vh;
+  width: 184vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  h1{
+    color: #d45b8c;
+    font-size: 5rem;
+  }
+  p{
+    font-size: 1.5rem;
+    color: #b85d7a;
+  }
+}
+
+.content{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 
 .about{
+  gap: 50px;
   display: grid;
   column-gap: 50px;
   grid-template-columns: auto auto auto;
-  background-color: dodgerblue;
-  padding: 10px;
+  background-color: white;
+  padding: 50px;
   
   h1{
-    text-align: center;
+    text-align: left;
+    color: #d45b8c;
+  }
+
+  p{
+    color:rgb(70, 70, 70);
+  }
+
+  h2{
+    color:rgb(70, 70, 70);
+    text-align: left;
+    margin-left: 5%;
   }
 }
-.about > div {
-    background-color: #f1f1f1;
-    border: 1px solid black;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;;
+.about > .eu {
+  border: 5px solid #d45b8c;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
 }
 
+.about > .tech{
+  border: 5px solid #d45b8c;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    color: rgb(70, 70, 70);
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto; 
+  }
+}
+
+.education{
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 50px;
+  
+  h1{
+    text-align: left;
+    color: #d45b8c;
+  }
+
+  p{
+    color:rgb(70, 70, 70);
+  }
+
+  h2{
+    color:rgb(70, 70, 70);
+    text-align: left;
+    margin-left: 5%;
+  }
+}
+.education > .escola {
+  border: 5px solid #d45b8c;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  ul{
+    color: rgb(70, 70, 70);
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto; 
+  }
+}
+
+.education > .experience{
+  border: 5px solid #d45b8c;
+  border-radius: 20px;
+  padding: 30px;
+  height: 50%;
+  font-size: 18px;
+  text-align: center;
+  ul{
+    color: rgb(70, 70, 70);
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto; 
+  }
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  background-color: #ffeef3;
+  align-items: center;
+  justify-content: center;
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  li{
+    gap: 10px;
+    font-weight: bold;
+    color: #d45b8c;
+  }
+  a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #d45b8c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .icon {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    display: block;
+  }
+}
