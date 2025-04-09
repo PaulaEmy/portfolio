@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap");
 
 @keyframes fadeIn {
   to {
@@ -6,11 +6,12 @@
   }
 }
 
-html{
+html {
   scroll-behavior: smooth;
-
+  overflow-x: hidden;
 }
 body {
+  max-width: 100%;
   margin: 0;
   height: 100vh;
   display: flex;
@@ -18,12 +19,11 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  font-family: 'Source Code Pro', monospace;
-  color:rgb(70, 70, 70);
-
+  font-family: "Source Code Pro", monospace;
+  color: rgb(70, 70, 70);
 }
 
-header{
+header {
   opacity: 0;
   animation: fadeIn 1.2s ease-in forwards;
   position: relative;
@@ -59,34 +59,33 @@ header{
   font-weight: bold;
 }
 
-a:hover{
-  color:#683545;
+a:hover {
+  color: #683545;
   transition: 0.5s;
 }
-
 
 .portfolio {
   opacity: 0;
   animation: fadeIn 1.2s ease-in forwards;
   gap: 50px;
-  background-color: #ffeef3; 
+  background-color: #ffeef3;
   min-height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
-  h1{
+  h1 {
     color: #d45b8c;
     font-size: 5rem;
   }
-  p{
+  p {
     font-size: 1.5rem;
     color: #b85d7a;
   }
 }
 
-.content{
+.content {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -95,26 +94,26 @@ a:hover{
   flex-wrap: wrap;
 }
 
-
-.about{
+.about {
+  max-width: 100%;
   gap: 50px;
   display: grid;
   column-gap: 50px;
   grid-template-columns: auto auto auto;
   background-color: white;
   padding: 50px;
-  
-  h1{
+
+  h1 {
     text-align: left;
     color: #d45b8c;
   }
 
-  p{
-    color:rgb(70, 70, 70);
+  p {
+    color: rgb(70, 70, 70);
   }
 
-  h2{
-    color:rgb(70, 70, 70);
+  h2 {
+    color: rgb(70, 70, 70);
     text-align: left;
     margin-left: 5%;
   }
@@ -127,13 +126,13 @@ a:hover{
   text-align: center;
 }
 
-.about > .tech{
+.about > .tech {
   border: 5px solid #d45b8c;
   border-radius: 20px;
   padding: 20px;
   font-size: 18px;
   text-align: center;
-  ul{
+  ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -142,11 +141,11 @@ a:hover{
     list-style-type: none;
     text-align: center;
     padding: 0;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 
-.education{
+.education {
   gap: 50px;
   display: flex;
   flex-direction: column;
@@ -154,18 +153,18 @@ a:hover{
   grid-template-columns: auto auto auto;
   background-color: white;
   padding: 50px;
-  
-  h1{
+
+  h1 {
     text-align: left;
     color: #d45b8c;
   }
 
-  p{
-    color:rgb(70, 70, 70);
+  p {
+    color: rgb(70, 70, 70);
   }
 
-  h2{
-    color:rgb(70, 70, 70);
+  h2 {
+    color: rgb(70, 70, 70);
     text-align: left;
     margin-left: 5%;
   }
@@ -176,32 +175,32 @@ a:hover{
   padding: 20px;
   font-size: 18px;
   text-align: center;
-  ul{
+  ul {
     color: rgb(70, 70, 70);
     list-style-type: none;
     text-align: center;
     padding: 0;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 
-.education > .experience{
+.education > .experience {
   border: 5px solid #d45b8c;
   border-radius: 20px;
   padding: 30px;
   height: 50%;
   font-size: 18px;
   text-align: center;
-  ul{
+  ul {
     color: rgb(70, 70, 70);
     list-style-type: none;
     text-align: center;
     padding: 0;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 
-.works{
+.works {
   gap: 50px;
   display: flex;
   flex-direction: column;
@@ -209,20 +208,20 @@ a:hover{
   grid-template-columns: auto auto auto;
   background-color: white;
   padding: 50px;
-  
-  h1{
+
+  h1 {
     text-align: center;
     color: #d45b8c;
   }
 }
 
-footer{
+footer {
   display: flex;
   width: 100%;
   background-color: #ffeef3;
   align-items: center;
   justify-content: center;
-  ul{
+  ul {
     list-style: none;
     padding: 0;
     margin: 20px;
@@ -231,12 +230,12 @@ footer{
     align-items: center;
     gap: 10px;
   }
-  li{
+  li {
     gap: 10px;
     font-weight: bold;
     color: #d45b8c;
   }
-  a{
+  a {
     display: flex;
     align-items: center;
     gap: 10px;
