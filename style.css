@@ -269,6 +269,7 @@ a:hover {
   padding: 30px;
   text-align: center;
   height: 90%;
+  text-align: left;
   a:hover {
     color: #683545;
     transition: 0.5s;
@@ -276,7 +277,8 @@ a:hover {
 }
 
 .container > div a {
-  display: block;
+  justify-content: flex-start;
+  display: inline-block;
   text-align: left;
   color: #d45b8c;
   text-decoration: none;
