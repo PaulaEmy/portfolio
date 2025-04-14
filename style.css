@@ -210,19 +210,20 @@ a:hover {
   padding: 30px;
   font-size: 18px;
   text-align: center;
- 
-  ul {
+
+  links {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
+  }
+  ul {
     color: rgb(70, 70, 70);
     text-align: center;
     padding: 0;
-    margin: 0 auto;
     list-style: none;
   }
   a {
-    display: block;
+    display: inline-block;
     text-align: left;
     color: #d45b8c;
     text-decoration: underline;
