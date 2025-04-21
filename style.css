@@ -102,13 +102,15 @@ a:hover {
 /*##########    SOBRE    ##########*/
 
 .about {
+  position: relative;
+  padding: 2rem;
+  border-radius: 20px;
   max-width: 100%;
-  gap: 50px;
   display: grid;
   column-gap: 50px;
   grid-template-columns: auto auto auto;
-  background-color: white;
-  padding: 50px;
+  gap: 50px;
+  padding-top: 80px; 
 
   h1 {
     text-align: left;
@@ -125,7 +127,30 @@ a:hover {
     margin-left: 5%;
   }
 }
+
+.img-circulo {
+  position: absolute;
+  top: 3px; 
+  right: 20px; 
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #f8c6e6;
+  background-color: white;
+  z-index: 10;
+}
+
+.img-circulo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 .about > .eu {
+  position: relative;
   border: 5px solid #d45b8c;
   border-radius: 20px;
   padding: 20px;
