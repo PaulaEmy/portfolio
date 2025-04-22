@@ -6,11 +6,6 @@
   }
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -107,41 +102,30 @@ a:hover {
 /*##########    SOBRE    ##########*/
 
 .about {
+  margin: 10px;
   position: relative;
   padding: 2rem;
   border-radius: 20px;
   max-width: 100%;
-  display: grid;
-  column-gap: 50px;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-direction: column;
   gap: 50px;
   padding-top: 80px; 
-
-  h1 {
-    text-align: left;
-    color: #d45b8c;
-  }
-
   p {
     color: rgb(70, 70, 70);
   }
 
-  h2 {
-    color: rgb(70, 70, 70);
-    text-align: left;
-    margin-left: 5%;
-  }
 }
 
 .img-circulo {
   position: absolute;
-  top: 3px; 
-  right: 20px; 
-  width: 150px;
-  height: 150px;
+  top: -50px; 
+  right: 900px; 
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid #f8c6e6;
+  border: 4px solid #d45b8c;
   background-color: white;
   z-index: 10;
 }
@@ -155,38 +139,23 @@ a:hover {
 }
 
 .about > .eu {
+  margin-left: 10%;
   position: relative;
   border: 5px solid #d45b8c;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
   font-size: 18px;
   text-align: center;
-}
-
-.about > .tech {
-  border: 5px solid #d45b8c;
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 18px;
-  text-align: center;
-}
-
-.about > .tech ul{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  justify-content: space-between;
-  color: rgb(70, 70, 70);
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
-  margin: 0 auto;
+  h1 {
+    text-align: center;
+    color: #d45b8c;
+  }
 }
 
 .about > .softskills{
   border: 5px solid #d45b8c;
   border-radius: 20px;
-  padding: 20px;
+  padding: 50px;
   font-size: 18px;
   text-align: center;
   ul {
@@ -198,9 +167,29 @@ a:hover {
     list-style-type: none;
     text-align: center;
     padding: 0;
-    margin: 0 auto;
   }
 }
+
+
+.about > .tech {
+  border: 5px solid #d45b8c;
+  border-radius: 20px;
+  padding: 80px;
+  font-size: 18px;
+  text-align: center;
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    color: rgb(70, 70, 70);
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+
 
 /*##########    EDUCAÇÃO    ##########*/
 
