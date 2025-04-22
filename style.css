@@ -6,6 +6,11 @@
   }
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -230,13 +235,16 @@ a:hover {
   padding: 20px;
   font-size: 18px;
   text-align: center;
+
 }
 
 .education > .escola ul{
-  color: rgb(70, 70, 70);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   list-style-type: none;
-  text-align: center;
-  padding: 0;
+  text-align: left;
+  padding: 20px;
   margin: 0 auto;
 }
 
