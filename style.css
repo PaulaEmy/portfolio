@@ -152,11 +152,20 @@ a:hover {
   }
 }
 
-.about > .softskills{
+.habilidades{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  h1{
+    color: #d45b8c;
+  }
+}
+
+.habilidades > .softskills{
   border: 5px solid #d45b8c;
   border-radius: 20px;
-  padding: 50px;
-  font-size: 18px;
+  padding: 40px;
+  font-size: 15px;
   text-align: center;
   ul {
     display: flex;
@@ -171,13 +180,14 @@ a:hover {
 }
 
 
-.about > .tech {
+.habilidades > .tech {
   border: 5px solid #d45b8c;
   border-radius: 20px;
-  padding: 80px;
+  padding: 40px;
   font-size: 18px;
   text-align: center;
   ul{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 15px;
