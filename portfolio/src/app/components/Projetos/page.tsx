@@ -37,10 +37,18 @@ export default function Projetos() {
         "Funcionalidade de avaliação dos projetos por professores e visitantes",
         "Geração de crachás personalizados para cada aluno"
       ],
+      problemaIdentificado: [
+        "Processo de avaliação realizado manualmente em formulários de papel",
+        "Dificuldade na organização e armazenamento dos dados das avaliações realizadas durante a feira técnica",
+        "Falta da participação dos visitantes na avaliação e fornecimento de feedback aos alunos",
+        "Tempo elevado para tabulação dos resultados e divulgação das notas finais dos projetos",
+        "Alto consumo de papel e recursos físicos durante o processo de avaliação"
+      ],
+      solucao: "Criação de um sistema web que digitalizou o processo de avaliação da Feira Técnica, permitindo o cadastro dos projetos, a avaliação online por professores e visitantes e a centralização dos resultados em uma única plataforma.",
       tecnologias: ["HTML", "CSS", "JavaScript", "MySQL"],
       url: "https://github.com/PaulaEmy/tcc",
       desafio: "Criação de um crachá personalizado para cada aluno com um QRCode para avaliação do projeto",
-      solucao: "Utilização da biblioteca QRCode.js para geração de QRCodes",
+      solucaoTecnica: "Utilização da biblioteca QRCode.js para geração de QRCodes",
       imagens: [
         "/images/tcc_img1.png",
         "/images/tcc_img2.png",
@@ -63,10 +71,17 @@ export default function Projetos() {
         "Normalização e análise de dados entre 2013 e 2023",
         "Interface web responsiva com gráficos interativos"
       ],
+      problemaIdentificado: [
+        "Grande volume de dados brutos distribuídos em diferentes fontes, dificultando a análise.",
+        "Ausência de uma ferramenta centralizada para consulta e análise das informações de comércio exterior do estado de São Paulo.",
+        "Dificuldade em identificar tendências e indicadores estratégicos devido à falta de visualizações adequadas.",
+        "Necessidade de tratamento e padronização dos dados para garantir análises confiáveis ao longo dos anos."
+      ],
+      solucao: "Interface web responsiva com filtros avançados (NCM, país, cidade) e gráficos interativos, consumindo dados de um banco MySQL populado e tratado via script Python.",
       tecnologias: ["HTML", "Python", "CSS", "MySQL", "Flask", "Pandas"],
       url: "https://github.com/Kernel-Panic-FatecSjc/KernelPanic-1DSM-API",
       desafio: "Criação de função para query SQL",
-      solucao: "Utilização SQLAlchemy para criação de funções query para filtrar informações do gráfico.",
+      solucaoTecnica: "Utilização SQLAlchemy para criação de funções query para filtrar informações do gráfico.",
       imagens: [
         "/images/proj2_img1.png",
         "/images/proj2_img2.png",
@@ -87,10 +102,17 @@ export default function Projetos() {
         "Unificação de checklists operacionais dispersos em diferentes ferramentas",
         "Relatórios estratégicos e dashboards em tempo real"
       ],
+      problemaIdentificado: [
+        "Utilização de múltiplas ferramentas isoladas para gerenciar processos administrativos, comerciais e operacionais.",
+        "Fragmentação das informações.",
+        "Dificuldade na obtenção de relatórios consolidados para acompanhamento dos indicadores da empresa.",
+        "Falta de padronização dos processos internos."
+      ],
+      solucao: "Ambiente unificado com gestão de clientes (funil de vendas), automação de eventos, centralização de checklists e dashboards estratégicos em tempo real.",
       tecnologias: ["HTML", "CSS", "Node.Js", "TypeScript", "React", "TypeORM"],
       url: "https://github.com/Kernel-Panic-FatecSjc/KernelPanic-2DSM-API",
       desafio: "Implementação de um kanban para melhor visualização e gerenciamento de vendas",
-      solucao: "Implementação da funcionalidade 'draggable' e bibliotecas para integração do backend",
+      solucaoTecnica: "Implementação da funcionalidade 'draggable' e bibliotecas para integração do backend",
       imagens: [
         "/images/proj3_img1.png",
         "/images/proj3_img2.png",
@@ -112,18 +134,21 @@ export default function Projetos() {
         "Gestores com visibilidade clara da alocação do time, status das tarefas e identificação de gargalos em tempo real",
         "Financeiro/Administrador com dados confiáveis sobre custos reais por projeto e base para auditoria e faturamento"
       ],
+      problemaIdentificado: [
+        "Baixa visibilidade sobre a distribuição do tempo e da capacidade das equipes.",
+        "Dificuldade para acompanhar custos reais dos projetos e gerar informações confiáveis para faturamento e auditoria.",
+        "Ausência de indicadores em tempo real para apoiar a gestão e a tomada de decisões."
+      ],    
+      solucao: "Sistema integrado com três perfis distintos: profissionais registram e acompanham seus apontamentos, gestores validam alocações e monitoram tarefas em tempo real, e o financeiro acessa dados consolidados para auditoria e faturamento.",
       tecnologias: ["React", "Spring Boot", "Next.js", "TypeScript", "Java", "MySQL", "Docker", "JWT"],
       url: "https://github.com/Kernel-Panic-FatecSjc/KernelPanic-3DSM-API",
       desafio: "Estruturação do sistema por meio de múltiplos multisserviços independentes utilizando o Spring Boot",
-      solucao: "Utilização de APIs REST para comunicação entre os serviços e ambiente padronizado com Docker",
+      solucaoTecnica: "Utilização de APIs REST para comunicação entre os serviços e ambiente padronizado com Docker",
       imagens: [
-        "/images/proj3_img1.png",
-        "/images/proj3_img2.png",
-        "/images/proj3_img3.png",
-        "/images/proj3_img4.png",
-        "/images/proj3_img5.png",
-        "/images/proj3_img6.png",
-        "/images/proj3_img7.png",
+        "/images/proj4_img1.png",
+        "/images/proj4_img2.png",
+        "/images/proj4_img3.png",
+        "/images/proj4_img4.png",
       ]
     },
   ];
@@ -172,11 +197,21 @@ export default function Projetos() {
               ))}
             </ul>
 
-            <h3>Desafio Técnico</h3>
-            <p>{projetoSelecionado.desafio}</p>
+            <h3>Problemas Identificados</h3>
+            <ul>
+              {projetoSelecionado.problemaIdentificado.map((o: string) => (
+                <li key={o}>{o}</li>
+              ))}
+            </ul>
 
             <h3>Solução</h3>
             <p>{projetoSelecionado.solucao}</p>
+            
+            <h3>Desafio Técnico</h3>
+            <p>{projetoSelecionado.desafio}</p>
+
+            <h3>Solução Técnica</h3>
+            <p>{projetoSelecionado.solucaoTecnica}</p>
 
             <h3>Tecnologias</h3>
             <ul>
