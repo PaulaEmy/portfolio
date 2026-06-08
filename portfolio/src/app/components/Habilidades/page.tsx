@@ -12,7 +12,7 @@ const tecnologias = [
   { nome: "MySQL", imagem: "/images/mysql.png" },
   { nome: "Python", imagem: "/images/python.png" },
   { nome: "HTML5", imagem: "/images/html5.png" },
-  { nome: "CSS", imagem: "/images/CSS.png" },
+  { nome: "CSS", imagem: "/images/css.png" },
   { nome: "JavaScript", imagem: "/images/javascript.png" },
   { nome: "Node.js", imagem: "/images/nodejs.png" },
   { nome: "Git", imagem: "/images/git.png" },
