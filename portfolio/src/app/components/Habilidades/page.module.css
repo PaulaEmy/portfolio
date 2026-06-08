@@ -1,0 +1,185 @@
+.container {
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.sideContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  color: #d45b8c;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.tecContainer {
+  background-image: linear-gradient(to top, white, #ffeef3, white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  justify-content: flex-start; 
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 100px;
+}
+
+.logoItem {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.logoItem:hover {
+  transform: scale(1.1);
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    font-size: 0.8rem;
+    white-space: nowrap;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.logoItem:hover .tooltip {
+    opacity: 1;
+}
+
+.softSkills {
+  background: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.softSkills h1 {
+  color: #d45b8c;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.softSkills ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.softSkills li {
+  background-color: #ffeef3;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+  color: #555;
+}
+
+.idiomaContainer {
+  background: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.idiomaContainer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.idiomaContainer li {
+  background-color: #ffeef3;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+  color: #555;
+}
+
+.idiomaContainer li:hover {
+  transform: translateY(-3px);
+}
+
+.softSkills li:hover {
+  transform: translateY(-3px);
+}
+
+@media (min-width: 1600px) {
+  .container {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    height: 100%;
+  }
+
+  .logoImg {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .softSkills {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .softSkills ul {
+    gap: 15px;
+  }
+
+  .softSkills li {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .tecContainer {
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .logos {
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .logoImg {
+    width: 60px;
+    height: 60px;
+  }
+}

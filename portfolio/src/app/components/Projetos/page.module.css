@@ -1,0 +1,355 @@
+.container {
+  min-height: 100vh;
+  padding: 80px;
+  background-image: linear-gradient(to top, #ffeef3, white);
+}
+
+.titulo {
+  text-align: center;
+  color: #d45b8c;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+
+.card {
+  border: 3px solid #d45b8c;
+  border-radius: 20px;
+
+  padding: 30px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(212, 91, 140, 0.15);
+}
+
+.card h2 {
+  color: #d45b8c;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+}
+
+/* Overlay */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+/* Modal */
+
+.modal {
+  width: 90%;
+  max-width: 900px;
+
+  max-height: 90vh;
+
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+
+  animation: abrirJanela 0.3s ease;
+}
+
+/* Barra superior */
+
+.windowBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 50px;
+  background: #f3f3f3;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Bolinhas */
+
+.botoes {
+  display: flex;
+  gap: 8px;
+}
+
+.red,
+.yellow,
+.green {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff5f57;
+}
+
+.yellow {
+  background: #ffbd2e;
+}
+
+.green {
+  background: #28c840;
+}
+
+/* URL */
+
+.url {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #666;
+  font-size: 0.9rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Conteúdo */
+
+.modalContent {
+  padding: 40px;
+
+  max-height: calc(90vh - 50px);
+
+  overflow-y: auto;
+}
+
+.modalContent label{
+    color: #d45b8c
+}
+
+.modalContent h2 {
+  color: #d45b8c;
+  margin-bottom: 20px;
+}
+
+.modalContent p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.modalContent h3 {
+  color: #d45b8c;
+  margin-bottom: 15px;
+}
+
+.modalContent ul {
+  list-style: none;
+}
+
+.modalContent li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.modalContent li::before {
+  content: "▸ ";
+  color: #d45b8c;
+}
+
+/* Animação */
+
+@keyframes abrirJanela {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideImage {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin: 30px 0;
+}
+
+.carrosselImagem {
+  width: 700px;
+  height: 400px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagemProjeto {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  animation: slideImage 0.4s ease;
+}
+
+.seta {
+  border: none;
+
+  background: white;
+
+  color: #555;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  font-size: 1.4rem;
+
+  transition: 0.3s;
+}
+
+.seta:hover {
+  transform: scale(1.1);
+}
+
+.indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  margin-top: 15px;
+}
+
+.indicador,
+.ativo {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+}
+
+.indicador {
+  background: #ccc;
+}
+
+.ativo {
+  background: #d45b8c;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .titulo {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .projetos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .modal {
+    width: 95%;
+    max-height: 95vh;
+  }
+
+  .modalContent {
+    padding: 20px;
+  }
+
+  .modalContent h2 {
+    font-size: 1.4rem;
+  }
+
+  .modalContent p,
+  .modalContent li {
+    font-size: 0.95rem;
+  }
+
+  .carrossel {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .carrosselImagem {
+    width: 100%;
+    height: auto;
+    min-height: 220px;
+    padding: 10px;
+  }
+
+  .imagemProjeto {
+    max-height: 250px;
+  }
+
+  .url {
+    font-size: 0.7rem;
+    max-width: 180px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .seta {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}

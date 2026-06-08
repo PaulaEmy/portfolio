@@ -1,0 +1,182 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+  box-sizing: border-box;
+}
+
+.titulo {
+  text-align: center;
+  color: #d45b8c;
+  font-size: 3rem;
+  margin-bottom: 60px;
+}
+
+.curriculoContainer {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 50px;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.menu button {
+  background: none;
+  border: none;
+
+  text-align: left;
+
+  font-size: 1.1rem;
+  color: #666;
+
+  cursor: pointer;
+
+  padding-bottom: 10px;
+
+  border-bottom: 2px solid transparent;
+
+  transition: all 0.3s ease;
+}
+
+.menu button:hover {
+  color: #d45b8c;
+}
+
+.ativo {
+  color: #d45b8c !important;
+  border-bottom: 2px solid #d45b8c !important;
+  font-weight: bold;
+}
+
+.conteudo {
+  animation: fadeIn 0.4s ease;  
+  min-width: 0;
+  width: 100%;
+}
+
+.conteudo h2 {
+  color: #d45b8c;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: white;
+
+  border: 3px solid #d45b8c;
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  margin-bottom: 20px;
+
+  transition: 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  color: #d45b8c;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.item {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 35px;
+}
+
+.item::before {
+  content: "➜";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  color: #d45b8c;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.aberto::before {
+  transform: rotate(90deg);
+}
+
+.item h3 {
+  color: #d45b8c;
+  margin-bottom: 5px;
+}
+
+.item p {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.item span {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.item a {
+  color: #d45b8c;
+  margin-bottom: 10px;
+}
+
+a:hover {
+  color: #683545;
+  transition: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .curriculoContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    padding: 30px;
+  }
+}
+
+.conteudoAtividade {
+  padding: 10px;
+  border-left: 2px solid #444;
+  margin-left: 10px;
+  animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

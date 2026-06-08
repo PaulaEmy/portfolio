@@ -1,0 +1,55 @@
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.portfolio {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+  gap: 50px;
+  background-image: linear-gradient(to bottom, #ffeef3, white);
+  min-height: 95vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.titulo{
+  animation: typing 4s steps(20) infinite, blink .6s infinite;
+  color: #d45b8c;
+  font-size: 4rem;
+}
+
+.subTitulo{
+  font-size: 1.5rem;
+  color: #b85d7a;
+}
+
+.content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .subTitulo {
+    font-size: 1.1rem;
+  }
+}
