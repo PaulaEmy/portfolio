@@ -145,10 +145,10 @@ export default function Projetos() {
       desafio: "Estruturação do sistema por meio de múltiplos multisserviços independentes utilizando o Spring Boot",
       solucaoTecnica: "Utilização de APIs REST para comunicação entre os serviços e ambiente padronizado com Docker",
       imagens: [
-        "/images/proj4_img1.png",
-        "/images/proj4_img2.png",
-        "/images/proj4_img3.png",
-        "/images/proj4_img4.png",
+        "/images/proj4_img1.jpg",
+        "/images/proj4_img2.jpg",
+        "/images/proj4_img3.jpg",
+        "/images/proj4_img4.jpg",
       ]
     },
   ];
