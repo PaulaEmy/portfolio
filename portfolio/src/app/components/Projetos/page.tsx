@@ -56,6 +56,24 @@ export default function Projetos() {
         "/images/tcc_img4.png",
         "/images/tcc_img5.png",
         "/images/tcc_img6.png",
+      ],
+      softskills: [
+        {
+          nome: "Trabalho em equipe",
+          descricao: "Colaboração com colegas durante o desenvolvimento."
+        },
+        {
+          nome: "Comunicação",
+          descricao: "Discussão de requisitos e apresentação da solução para professores e avaliadores."
+        },
+        {
+          nome: "Resolução de problemas",
+          descricao: "Identificação e solução de desafios relacionados à digitalização do processo de avaliação."
+        },
+        {
+          nome: "Empatia com o usuário",
+          descricao: "Desenvolvimento de uma experiência simples e acessível para visitantes e avaliadores."
+        }
       ]
     },
 
@@ -88,6 +106,24 @@ export default function Projetos() {
         "/images/proj2_img3.png",
         "/images/proj2_img4.png",
         "/images/proj2_img5.png",
+      ],
+      softskills: [
+        {
+          nome: "Resolução de problemas",
+          descricao: "Desenvolvimento de soluções para tratamento e consulta eficiente dos dados."
+        },
+        {
+          nome: "Trabalho em equipe",
+          descricao: "Cooperação com o grupo para integração das diferentes partes do sistema."
+        },
+        {
+          nome: "Organização",
+          descricao: "Estruturação de dados, filtros e consultas para facilitar a análise."
+        },
+        {
+          nome: "Aprendizagem contínua",
+          descricao: "Busca de conhecimento em análise de dados, Python e bibliotecas utilizadas no projeto."
+        }
       ]
     },
     {
@@ -121,6 +157,24 @@ export default function Projetos() {
         "/images/proj3_img5.png",
         "/images/proj3_img6.png",
         "/images/proj3_img7.png",
+      ],
+      softskills: [
+        {
+          nome: "Trabalho em equipe",
+          descricao: "Desenvolvimento colaborativo em um projeto com múltiplos módulos e funcionalidades."
+        },
+        {
+          nome: "Comunicação",
+          descricao: "Alinhamento constante com a equipe para definição de regras de negócio."
+        },
+        {
+          nome: "Flexibilidade",
+          descricao: "Capacidade de lidar com mudanças de requisitos e novas demandas do projeto."
+        },
+        {
+          nome: "Organização",
+          descricao: "Gerenciamento de tarefas e funcionalidades distribuídas entre diferentes áreas."
+        }
       ]
     },
     {
@@ -149,6 +203,28 @@ export default function Projetos() {
         "/images/proj4_img2.jpg",
         "/images/proj4_img3.jpg",
         "/images/proj4_img4.jpg",
+      ],
+      softskills: [
+        {
+          nome: "Resolução de problemas",
+          descricao: "Definição de soluções para desafios relacionados à arquitetura e integração do sistema."
+        },
+        {
+          nome: "Trabalho em equipe",
+          descricao: "Integração contínua com outros desenvolvedores para garantir o funcionamento da plataforma."
+        },
+        {
+          nome: "Comunicação",
+          descricao: "Troca de informações para alinhamento técnico e definição de integrações."
+        },
+        {
+          nome: "Organização",
+          descricao: "Estruturação dos serviços e acompanhamento das entregas do projeto."
+        },
+        {
+          nome: "Flexibilidade",
+          descricao: "Adaptabilidade a aplicação de novas tecnologias e arquiteturas durante o desenvolvimento."
+        }
       ]
     },
   ];
@@ -218,6 +294,19 @@ export default function Projetos() {
               {projetoSelecionado.tecnologias.map((t: string) => (
                 <li key={t}>{t}</li>
               ))}
+            </ul>
+
+            <h3>Soft Skills</h3>
+
+            <ul className={styles.softSkills}>
+              {projetoSelecionado.softskills.map(
+                (skill: { nome: string; descricao: string }) => (
+                  <li key={skill.nome}>
+                    <strong>{skill.nome}</strong>
+                    <p>{skill.descricao}</p>
+                  </li>
+                )
+              )}
             </ul>
 
             <h3>Imagens do projeto</h3>
