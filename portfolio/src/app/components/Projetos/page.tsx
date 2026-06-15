@@ -60,19 +60,19 @@ export default function Projetos() {
       softskills: [
         {
           nome: "Trabalho em equipe",
-          descricao: "Colaboração com colegas durante o desenvolvimento."
+          descricao: "Atuei em conjunto com os demais integrantes na divisão de tarefas e resolução de problemas durante o projeto."
         },
         {
           nome: "Comunicação",
-          descricao: "Discussão de requisitos e apresentação da solução para professores e avaliadores."
+          descricao: "Desenvolvida durante discussões de requisitos e melhorias com colegas e professores."
         },
         {
           nome: "Resolução de problemas",
-          descricao: "Identificação e solução de desafios relacionados à digitalização do processo de avaliação."
+          descricao: "Análise de solução de desafios relacionados à digitalização do processo de avaliação."
         },
         {
           nome: "Empatia com o usuário",
-          descricao: "Desenvolvimento de uma experiência simples e acessível para visitantes e avaliadores."
+          descricao: "Projetei interfaces simples e amigáveis, com o intuito de facilitar o uso para professores, estudantes e visitantes."
         }
       ]
     },
@@ -110,19 +110,19 @@ export default function Projetos() {
       softskills: [
         {
           nome: "Resolução de problemas",
-          descricao: "Desenvolvimento de soluções para tratamento e consulta eficiente dos dados."
+          descricao: "Aplicada na análise e tratamento de grande base de dados."
         },
         {
           nome: "Trabalho em equipe",
-          descricao: "Cooperação com o grupo para integração das diferentes partes do sistema."
+          descricao: "Cooperação com o grupo para integração das diferentes partes do sistema como o banco de dados, backend e inetrface para visualização de dados."
         },
         {
           nome: "Organização",
-          descricao: "Estruturação de dados, filtros e consultas para facilitar a análise."
+          descricao: "Desenvolvida durante o projeto para facilitar a manutenção do sistema."
         },
         {
           nome: "Aprendizagem contínua",
-          descricao: "Busca de conhecimento em análise de dados, Python e bibliotecas utilizadas no projeto."
+          descricao: "Busquei conhecimentos em Python, Pandas e análise de dados para implementar soluções para o projeto."
         }
       ]
     },
@@ -161,19 +161,19 @@ export default function Projetos() {
       softskills: [
         {
           nome: "Trabalho em equipe",
-          descricao: "Desenvolvimento colaborativo em um projeto com múltiplos módulos e funcionalidades."
+          descricao: "Desenvolvi funcionalidades em conjunto com meus colegas para implementar e trabalhar em diferentes módulos do projeto."
         },
         {
           nome: "Comunicação",
-          descricao: "Alinhamento constante com a equipe para definição de regras de negócio."
+          descricao: "Utilizada para compreender requisitos e alinhar soluções com a equipe."
         },
         {
           nome: "Flexibilidade",
-          descricao: "Capacidade de lidar com mudanças de requisitos e novas demandas do projeto."
+          descricao: "Usado para adaptar a mudanças de requisitos e evoluções das necessidades do cliente"
         },
         {
           nome: "Organização",
-          descricao: "Gerenciamento de tarefas e funcionalidades distribuídas entre diferentes áreas."
+          descricao: "Gerenciei minhas tarefas e estruturei meu código com o intuito de facilitar a manutenção do projeto."
         }
       ]
     },
@@ -207,23 +207,23 @@ export default function Projetos() {
       softskills: [
         {
           nome: "Resolução de problemas",
-          descricao: "Definição de soluções para desafios relacionados à arquitetura e integração do sistema."
+          descricao: "Desenvolvida na modeloagem de fluxos e definições de microsserviços."
         },
         {
           nome: "Trabalho em equipe",
-          descricao: "Integração contínua com outros desenvolvedores para garantir o funcionamento da plataforma."
+          descricao: "Colaborei com meus colegas de equipe na integração de serviços e validações de funcionalidades."
         },
         {
           nome: "Comunicação",
-          descricao: "Troca de informações para alinhamento técnico e definição de integrações."
+          descricao: "Comunicação constante com o grupo a fim de alinhar requisitos e validar entregas."
         },
         {
           nome: "Organização",
-          descricao: "Estruturação dos serviços e acompanhamento das entregas do projeto."
+          descricao: "Gerenciei minhas tarefas e estruturei meu código com o intuito de facilitar a manutenção do projeto."
         },
         {
           nome: "Flexibilidade",
-          descricao: "Adaptabilidade a aplicação de novas tecnologias e arquiteturas durante o desenvolvimento."
+          descricao: "Aprendi e apliquei novas tecnologias e padrões arquiteturais durante o desenvolvimento do sistema."
         }
       ]
     },
