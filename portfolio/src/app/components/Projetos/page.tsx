@@ -207,11 +207,11 @@ export default function Projetos() {
       softskills: [
         {
           nome: "Resolução de problemas",
-          descricao: "Desenvolvida na modeloagem de fluxos e definições de microsserviços."
+          descricao: "Desenvolvida na busca de alternativas diante problemas encontrados durante o desenvolvimento."
         },
         {
           nome: "Trabalho em equipe",
-          descricao: "Colaborei com meus colegas de equipe na integração de serviços e validações de funcionalidades."
+          descricao: "Essencial na colaboração entre colegas de equipe para atingir os objetivos do projeto."
         },
         {
           nome: "Comunicação",
@@ -219,11 +219,11 @@ export default function Projetos() {
         },
         {
           nome: "Organização",
-          descricao: "Gerenciei minhas tarefas e estruturei meu código com o intuito de facilitar a manutenção do projeto."
+          descricao: "Gerenciei minhas tarefas e planejei minhas entregas ao longo das sprints."
         },
         {
           nome: "Flexibilidade",
-          descricao: "Aprendi e apliquei novas tecnologias e padrões arquiteturais durante o desenvolvimento do sistema."
+          descricao: "Fundamental para lidar com mudanças de requisitos e novas demandas."
         }
       ]
     },
